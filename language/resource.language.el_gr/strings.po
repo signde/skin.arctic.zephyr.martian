@@ -1,6 +1,6 @@
 # Kodi Media Center language file
 # Addon Name: Arctic: Zephyr - Martian
-# Addon id: skin.arctic.zephyr.martian
+# Addon id: skin.arctic.zephyr.martian.signde
 # Addon Provider: jurialmunkey, beatmasterrs, martian89
 msgid ""
 msgstr ""
