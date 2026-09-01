@@ -2090,6 +2090,17 @@
             <onclick>ActivateWindow(videoplaylist)</onclick>
             <visible>Integer.IsGreater(Playlist.Length(video),1) + !Pvr.IsPlayingTv</visible>
         </control>
+        <control type="button" id="34">
+            <description>PlayerProcessInfo</description>
+            <width>48</width>
+            <height>48</height>
+            <label/>
+            <font />
+            <include>DefOSDUpDown</include>
+            <texturefocus colordiffuse="$VAR[ColorHighlight]">osd/info.png</texturefocus>
+            <texturenofocus colordiffuse="Dark1">osd/info.png</texturenofocus>
+            <onclick>RunScript(script.signde.tinyppi,dialog)</onclick>
+        </control>
         <control type="button" id="19">
             <description>Settings</description>
             <width>48</width>
@@ -2246,6 +2257,17 @@
             <onclick>Dialog.Close(all,true)</onclick>
             <onclick>ActivateWindow(videoplaylist)</onclick>
             <visible>Integer.IsGreater(Playlist.Length(video),1) + !Pvr.IsPlayingTv</visible>
+        </control>
+        <control type="button" id="34">
+            <description>PlayerProcessInfo</description>
+            <width>48</width>
+            <height>48</height>
+            <label/>
+            <font />
+            <include>DefOSDUpDown</include>
+            <texturefocus colordiffuse="$VAR[ColorHighlight]">osd/info.png</texturefocus>
+            <texturenofocus colordiffuse="$VAR[OSDPanelWhite70]">osd/info.png</texturenofocus>
+            <onclick>RunScript(script.signde.tinyppi,dialog)</onclick>
         </control>
         <control type="button" id="19">
             <description>Settings</description>

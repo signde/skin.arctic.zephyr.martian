@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.arctic.zephyr.martian" version="3.20.0" name="Arctic: Zephyr (martian)" provider-name="jurialmunkey, beatmasterrs, martian89">
+<addon id="skin.arctic.zephyr.martian.signde" version="11.3.20.0" name="Arctic: Zephyr - Martian (avdvplus/p3i)" provider-name="jurialmunkey, beatmasterrs, martian89, jamal2362, signde">
     <requires>
         <import addon="xbmc.gui" version="5.17.0"/>
         <import addon="script.skinvariables" version="2.1.33" />
@@ -7,6 +7,7 @@
         <import addon="script.image.resource.select" version="3.0.2"/>
         <import addon="plugin.video.themoviedb.helper" version="5.4.16"/>
         <import addon="resource.images.weathericons.white" version="0.0.6"/>
+        <import addon="script.signde.tinyppi" version="10.2.7.3"/>
     </requires>
     <extension point="xbmc.gui.skin" defaultthemename="Textures.xbt" debugging="false" effectslowdown="1">
         <res width="1920" height="1080" aspect="16:9" default="true" folder="1080i" />
@@ -15,7 +16,7 @@
         <platform>all</platform>
         <license>Creative Commons Attribution Non-Commercial Share-Alike 3.0</license>
         <forum>https://forum.kodi.tv/showthread.php?tid=382650</forum>
-        <source>https://github.com/martian89/skin.arctic.zephyr.martian</source>
+        <source>https://github.com/signde/skin.arctic.zephyr.martian</source>
         <assets>
             <icon>icon.png</icon>
             <fanart>fanart.jpg</fanart>
@@ -31,6 +32,9 @@
             <screenshot>resources/screenshot-10.jpg</screenshot>
         </assets>
         <news>
+[B]11.3.20.0[/B]
+- Updated to upstream Martian v3.20.0
+
 [B]3.20.0[/B]
 - Added skin color theme setting to skin settings (requires script.skin.info.service)
 - Implemented fallback to season/tvshow fanart for unwatched episodes
@@ -53,6 +57,11 @@
 - Fixed colour of studio icons in info dialogs
 - Fixed visibility conditions for arrows on home menu bar
 - Fixed possible overlap of furniture flags and weather/clock
+
+[B]11.3.19.13[/B]
+- Assigned the independent skin.arctic.zephyr.martian.signde add-on ID to prevent conflicts with upstream releases
+- Delegated Player Process Info and playback codec badges to signde PPI
+- Added Profile 7 MEL/FEL media flags
 
 [B]3.19.13[/B]
 - Improved support for musicvideos in video OSD and extended now playing info

@@ -1,25 +1,39 @@
 # Arctic: Zephyr (martian) [![License](https://img.shields.io/badge/license-CC--NC--SA%203.0-green)](http://creativecommons.org/licenses/by-nc-sa/3.0/)
 
-<img src="https://github.com/martian89/skin.arctic.zephyr.martian/blob/master/icon.png" width="256" height="256" />
+<img src="https://github.com/signde/skin.arctic.zephyr.martian/blob/master/icon.png" width="256" height="256" />
 
 For more information and support please visit the [Kodi Community Forum](https://forum.kodi.tv/showthread.php?tid=382650)
 
+This fork adds playback information and codec display support for CPM-derived CoreELEC 21 builds, including avdvplus and p3i.
+
+## Changes
+
+### 11.3.20.0
+
+- Updated to upstream Martian v3.20.0
+
+### 10.3.19.13
+
+- Delegated Player Process Info and playback codec badges to signde PPI.
+- Added Profile 7 MEL/FEL media flags.
+
 ## Installation 
 
-Install via the Martian Add-on Repository to enable automatic updates. 
+Install via the signde repository to enable automatic updates.
 
 
 Kodi File Manager Source:
-https://martian89.github.io/repository.martian/
+https://signde.github.io/repository.signde/
 
 Direct ZIP Install:
-https://martian89.github.io/repository.martian/repository.martian-1.1.0.zip
+https://signde.github.io/repository.signde/repository.signde-1.2.zip
 
 Instructions:
 
 1. Enable "Unknown Sources" in Kodi Settings > System > Add-ons
-2. Install the repository using either the zip or file manager source linked above
-3. Install the latest version of Arctic: Zephyr (martian) from this repository
+2. Enable "Update official add-ons from: Any repositories" in Kodi Settings > System > Add-ons
+3. Install the repository using either the zip or file manager source linked above
+4. Install Arctic: Zephyr - Martian (avdvplus/p3i) from the signde repository
 
 
 ## Media flags
@@ -47,4 +61,3 @@ To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-
 or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
 
 Color schemes from Arctic Fuse 2 (https://github.com/jurialmunkey/skin.arctic.fuse.2) are licensed under the Creative Commons Attribution Non-Commercial Share-Alike 4.0 Unported License.
-

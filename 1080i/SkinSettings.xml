@@ -195,7 +195,7 @@
                         <usealttexture>String.IsEqual(Window.Property(content),9)</usealttexture>
                         <alttexturenofocus colordiffuse="$VAR[ColorGradient]" border="5">common/gradient-box-wide-cut.png</alttexturenofocus>
                         <include>DefSettingsButtonGradientSkinSettings</include>
-                        <label>$INFO[System.AddonTitle(skin.arctic.zephyr.martian)]</label>
+                        <label>$INFO[System.AddonTitle(skin.arctic.zephyr.martian.signde)]</label>
                         <onright>9900</onright>
                         <onfocus>SetProperty(content,9)</onfocus>
                     </control>
@@ -1442,7 +1442,7 @@
                             <disabledcolor>PanelWhite70</disabledcolor>
                             <animation effect="slide" start="0" end="0,-167" time="150" condition="true">Conditional</animation>
                             <align>left</align>
-                            <label>v$INFO[System.AddonVersion(skin.arctic.zephyr.martian)]</label>
+                            <label>v$INFO[System.AddonVersion(skin.arctic.zephyr.martian.signde)]</label>
                         </control>
                         <control type="button" id="9911">
                             <width>1360</width>
