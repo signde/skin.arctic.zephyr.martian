@@ -335,12 +335,16 @@
 
     <variable name="Image_Video_HDRType">
         <value condition="$EXP[IsVideoHDR10Plus]">$VAR[MediaFlagsPath]/other/hdr10plus.png</value>
+        <value condition="Skin.HasSetting(furniture.coloredicons) + !VideoPlayer.IsFullscreen + String.IsEqual(ListItem.HdrType,dolbyvision) + String.StartsWith(ListItem.DvProfile,7.) + String.Contains(ListItem.DvProfile,FEL)">flags/color/other/dolbyvision_fel.png</value>
+        <value condition="Skin.HasSetting(furniture.coloredicons) + !VideoPlayer.IsFullscreen + String.IsEqual(ListItem.HdrType,dolbyvision) + String.StartsWith(ListItem.DvProfile,7.) + String.Contains(ListItem.DvProfile,MEL)">flags/color/other/dolbyvision_mel.png</value>
         <value condition="!VideoPlayer.IsFullscreen + !String.IsEmpty(ListItem.HdrType)">$VAR[MediaFlagsPath]$INFO[ListItem.HdrType,/other/,.png]</value>
         <value condition="VideoPlayer.IsFullscreen + !String.IsEmpty(VideoPlayer.HdrType)">$VAR[MediaFlagsPath]$INFO[VideoPlayer.HdrType,/other/,.png]</value>
     </variable>
 
     <variable name="Image_Video_HDRType_Hub">
         <value condition="$EXP[IsVideoHDR10PlusHub]">$VAR[MediaFlagsPath]/other/hdr10plus.png</value>
+        <value condition="Skin.HasSetting(furniture.coloredicons) + String.IsEqual(Container(9500).ListItem.HdrType,dolbyvision) + String.StartsWith(Container(9500).ListItem.DvProfile,7.) + String.Contains(Container(9500).ListItem.DvProfile,FEL)">flags/color/other/dolbyvision_fel.png</value>
+        <value condition="Skin.HasSetting(furniture.coloredicons) + String.IsEqual(Container(9500).ListItem.HdrType,dolbyvision) + String.StartsWith(Container(9500).ListItem.DvProfile,7.) + String.Contains(Container(9500).ListItem.DvProfile,MEL)">flags/color/other/dolbyvision_mel.png</value>
         <value condition="!String.IsEmpty(Container(9500).ListItem.HdrType)">$VAR[MediaFlagsPath]$INFO[Container(9500).ListItem.HdrType,/other/,.png]</value>
     </variable>
 
