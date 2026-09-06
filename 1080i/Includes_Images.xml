@@ -133,8 +133,9 @@
     </variable>
 
     <variable name="Image_RottenTomatoes_UserMeter">
-        <value condition="Integer.IsGreater(Window(Home).Property(TMDbHelper.ListItem.RottenTomatoes_UserMeter),59) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.RottenTomatoes_UserMeter))">ratings/popcorn.png</value>
-        <value condition="Integer.IsGreater(Window(Home).Property(TMDbHelper.ListItem.RottenTomatoes_UserMeter),0) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.RottenTomatoes_UserMeter))">ratings/popcorn_spilt.png</value>
+        <value condition="String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.RottenTomatoes_UserMeter_Image),hot)">ratings/hot.png</value>
+        <value condition="Integer.IsGreater(Window(Home).Property(TMDbHelper.ListItem.RottenTomatoes_UserMeter),59)">ratings/popcorn.png</value>
+        <value condition="Integer.IsGreater(Window(Home).Property(TMDbHelper.ListItem.RottenTomatoes_UserMeter),0)">ratings/popcorn_spilt.png</value>
     </variable>
 
     <variable name="Image_DiscArt_Music">
