@@ -162,9 +162,9 @@
         <value>$INFO[ListItem.Label2]</value>
     </variable>
 
-    <variable name="LabelDurationMusicFurniture">
-        <value condition="String.IsEqual(ListItem.DBType,album) + !String.IsEmpty(ListItem.Duration(mins))">$VAR[LabelDurationTimeCheck]</value>
-        <value>$INFO[ListItem.Duration(mins:ss),, $LOCALIZE[31102]]</value>
+    <variable name="LabelDurationFurniture">
+        <value condition="[String.IsEqual(ListItem.DBType,song) | String.IsEqual(ListItem.DBType,musicvideo)] + !String.IsEmpty(ListItem.Duration(ss))">$INFO[ListItem.Duration(mins:ss),, $LOCALIZE[31102]]</value>
+        <value>$VAR[LabelDurationTimeCheck]</value>
     </variable>
     
     <variable name="LabelPlotBox">
