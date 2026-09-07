@@ -1610,14 +1610,14 @@
 	                <control type="image">
 	                    <bottom>63</bottom>
 	                    <centerleft>40</centerleft>
-	                    <width>60</width>
+	                    <width>80</width>
 	                    <height>4</height>
 	                    <texture colordiffuse="$VAR[ColorHighlight]">common/box.png</texture>
 	                </control>
 	                <control type="image">
 	                    <bottom>63</bottom>
 	                    <centerleft>40</centerleft>
-	                    <width>60</width>
+	                    <width>80</width>
 	                    <height>4</height>
 	                    <texture colordiffuse="$VAR[ColorGradient]">common/gradient-box.png</texture>
 	                </control>
