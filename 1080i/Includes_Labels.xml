@@ -493,7 +493,7 @@
     </variable> 
 
     <variable name="Label_HomeMenuStyle">
-        <value condition="Skin.HasSetting(home.showicons) + Skin.HasSetting(homemenu.only.icons) + Skin.HasSetting(home.vertical)">$LOCALIZE[31409]</value>
+        <value condition="Skin.HasSetting(home.showicons) + Skin.HasSetting(homemenu.only.icons)">$LOCALIZE[31409]</value>
         <value condition="Skin.HasSetting(home.showicons)">$LOCALIZE[31408]</value>
         <value>$LOCALIZE[31407]</value>
     </variable>
