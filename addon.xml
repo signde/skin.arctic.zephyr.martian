@@ -48,6 +48,7 @@
 - Display year for movie sets in list views
 - Updated Rotten Tomatoes icons
 - Added support for Rotten tomatoes certified hot rating
+- Added support for Auro-3D to media flags
 - Fixed duration label in list views for sort method "Date"
 - Fixed colour of studio icons in info dialogs
 - Fixed visibility conditions for arrows on home menu bar
