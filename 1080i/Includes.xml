@@ -180,12 +180,12 @@
     </expression>
 
     <expression name="IsVideo3D">
-        ListItem.IsStereoscopic | String.Contains(ListItem.FilenameAndPath,.3D) | String.Contains(ListItem.FilenameAndPath,-3D)
+        ListItem.IsStereoscopic | String.Contains(ListItem.FilenameAndPath,.3D) | [String.Contains(ListItem.FilenameAndPath,-3D) + !String.Contains(ListItem.FileNameAndPath,auro-3d)]
         | String.Contains(ListItem.FilenameAndPath,_3D)
     </expression>
 
     <expression name="IsVideo3DHub">
-        Container(9500).ListItem.IsStereoscopic | String.Contains(Container(9500).ListItem.FilenameAndPath,.3D) | String.Contains(Container(9500).ListItem.FilenameAndPath,-3D)
+        Container(9500).ListItem.IsStereoscopic | String.Contains(Container(9500).ListItem.FilenameAndPath,.3D) | [String.Contains(Container(9500).ListItem.FilenameAndPath,-3D) + !String.Contains(ListItem.FileNameAndPath,auro-3d)]
         | String.Contains(Container(9500).ListItem.FilenameAndPath,_3D)
     </expression>
 
