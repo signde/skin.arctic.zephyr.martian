@@ -1590,6 +1590,12 @@
 
     <variable name="Label_Audio_Codec">
         <value condition="String.IsEqual(ListItem.AudioCodec,aac)">AAC</value>
+        <value condition="String.IsEqual(ListItem.AudioCodec,aac_latm)">AAC LATM</value>
+        <value condition="String.IsEqual(ListItem.AudioCodec,aac_lc)">AAC-LC</value>
+        <value condition="String.IsEqual(ListItem.AudioCodec,aac_ltp)">AAC-LTP</value>
+        <value condition="String.IsEqual(ListItem.AudioCodec,aac_ssr)">AAC-SSR</value>
+        <value condition="String.IsEqual(ListItem.AudioCodec,he_aac)">HE-AAC</value>
+        <value condition="String.IsEqual(ListItem.AudioCodec,he_aac_v2)">HE-AACv2</value>
         <value condition="String.IsEqual(ListItem.AudioCodec,ac3)">Dolby Digital</value>
         <value condition="String.IsEqual(ListItem.AudioCodec,aif)">AIFF</value>
         <value condition="String.IsEqual(ListItem.AudioCodec,aifc)">AIFF</value>
@@ -1601,15 +1607,21 @@
         <value condition="String.IsEqual(ListItem.AudioCodec,dca)">DTS</value>
         <value condition="String.IsEqual(ListItem.AudioCodec,dolbydigital)">Dolby Digital</value>
         <value condition="String.IsEqual(ListItem.AudioCodec,dts)">DTS</value>
+        <value condition="String.IsEqual(ListItem.AudioCodec,dts_96_24)">DTS 96/24</value>
+        <value condition="String.IsEqual(ListItem.AudioCodec,dts_es)">DTS-ES</value>
+        <value condition="String.IsEqual(ListItem.AudioCodec,dts_express)">DTS Express</value>
         <value condition="String.IsEqual(ListItem.AudioCodec,dtshd_hra) + $EXP[IsAudioCodecDTSX]">DTS-HD HRA / DTS:X</value>
         <value condition="String.IsEqual(ListItem.AudioCodec,dtshd_hra) + $EXP[IsAudioCodecAuro3D]">Auro-3D</value>
         <value condition="String.IsEqual(ListItem.AudioCodec,dtshd_hra)">DTS-HD HRA</value>
         <value condition="String.IsEqual(ListItem.AudioCodec,dtshd_ma) + $EXP[IsAudioCodecDTSX]">DTS-HD MA / DTS:X</value>
         <value condition="String.IsEqual(ListItem.AudioCodec,dtshd_ma) + $EXP[IsAudioCodecAuro3D]">Auro-3D</value>
         <value condition="String.IsEqual(ListItem.AudioCodec,dtshd_ma)">DTS-HD MA</value>
+        <value condition="String.IsEqual(ListItem.AudioCodec,dtshd_ma_x)">DTS-HD MA / DTS:X</value>
+        <value condition="String.IsEqual(ListItem.AudioCodec,dtshd_ma_x_imax)">DTS-HD MA / DTS:X IMAX</value>
         <value condition="String.IsEqual(ListItem.AudioCodec,dtsma)">DTS-HD MA</value>
         <value condition="String.IsEqual(ListItem.AudioCodec,eac3) + $EXP[IsAudioCodecATMOS]">Dolby Digital Plus Atmos</value>
         <value condition="String.IsEqual(ListItem.AudioCodec,eac3)">Dolby Digital Plus</value>
+        <value condition="String.IsEqual(ListItem.AudioCodec,eac3_ddp_atmos)">Dolby Digital Plus Atmos</value>
         <value condition="String.IsEqual(ListItem.AudioCodec,flac) + $EXP[IsAudioCodecAuro3D]">Auro-3D</value>
         <value condition="String.IsEqual(ListItem.AudioCodec,flac)">FLAC</value>
         <value condition="String.IsEqual(ListItem.AudioCodec,mp1)">MP1</value>
@@ -1625,6 +1637,7 @@
         <value condition="String.IsEqual(ListItem.AudioCodec,pcm_s24le)">PCM</value>
         <value condition="String.IsEqual(ListItem.AudioCodec,truehd) + $EXP[IsAudioCodecATMOS]">Dolby TrueHD Atmos</value>
         <value condition="String.IsEqual(ListItem.AudioCodec,truehd)">Dolby TrueHD</value>
+        <value condition="String.IsEqual(ListItem.AudioCodec,truehd_atmos)">Dolby TrueHD Atmos</value>
         <value condition="String.IsEqual(ListItem.AudioCodec,vorbis)">Vorbis</value>
         <value condition="String.IsEqual(ListItem.AudioCodec,wav)">WAV</value>
         <value condition="String.IsEqual(ListItem.AudioCodec,wavpack)">WAVP</value>
@@ -1635,6 +1648,12 @@
 
     <variable name="Label_Audio_Codec_Furniture">
         <value condition="String.IsEqual(ListItem.AudioCodec,aac) | [VideoPlayer.IsFullscreen + String.IsEqual(VideoPlayer.AudioCodec,aac)] | [Window.IsActive(visualisation) + String.IsEqual(MusicPlayer.Codec,aac)]">AAC</value>
+        <value condition="String.IsEqual(ListItem.AudioCodec,aac_latm) | [VideoPlayer.IsFullscreen + String.IsEqual(VideoPlayer.AudioCodec,aac_latm)] | [Window.IsActive(visualisation) + String.IsEqual(MusicPlayer.Codec,aac_latm)]">AAC</value>
+        <value condition="String.IsEqual(ListItem.AudioCodec,aac_lc) | [VideoPlayer.IsFullscreen + String.IsEqual(VideoPlayer.AudioCodec,aac_lc)] | [Window.IsActive(visualisation) + String.IsEqual(MusicPlayer.Codec,aac_lc)]">AAC</value>
+        <value condition="String.IsEqual(ListItem.AudioCodec,aac_ltp) | [VideoPlayer.IsFullscreen + String.IsEqual(VideoPlayer.AudioCodec,aac_ltp)] | [Window.IsActive(visualisation) + String.IsEqual(MusicPlayer.Codec,aac_ltp)]">AAC</value>
+        <value condition="String.IsEqual(ListItem.AudioCodec,aac_ssr) | [VideoPlayer.IsFullscreen + String.IsEqual(VideoPlayer.AudioCodec,aac_ssr)] | [Window.IsActive(visualisation) + String.IsEqual(MusicPlayer.Codec,aac_ssr)]">AAC</value>
+        <value condition="String.IsEqual(ListItem.AudioCodec,he_aac) | [VideoPlayer.IsFullscreen + String.IsEqual(VideoPlayer.AudioCodec,he_aac)] | [Window.IsActive(visualisation) + String.IsEqual(MusicPlayer.Codec,he_aac)]">AAC</value>
+        <value condition="String.IsEqual(ListItem.AudioCodec,he_aac_v2) | [VideoPlayer.IsFullscreen + String.IsEqual(VideoPlayer.AudioCodec,he_aac_v2)] | [Window.IsActive(visualisation) + String.IsEqual(MusicPlayer.Codec,he_aac_v2)]">AAC</value>
         <value condition="String.IsEqual(ListItem.AudioCodec,ac3) | [VideoPlayer.IsFullscreen + String.IsEqual(VideoPlayer.AudioCodec,ac3)] | [Window.IsActive(visualisation) + String.IsEqual(MusicPlayer.Codec,ac3)]">DD</value>
         <value condition="String.IsEqual(ListItem.AudioCodec,aif) | [VideoPlayer.IsFullscreen + String.IsEqual(VideoPlayer.AudioCodec,aif)] | [Window.IsActive(visualisation) + String.IsEqual(MusicPlayer.Codec,aif)]">AIFF</value>
         <value condition="String.IsEqual(ListItem.AudioCodec,aifc) | [VideoPlayer.IsFullscreen + String.IsEqual(VideoPlayer.AudioCodec,aifc)] | [Window.IsActive(visualisation) + String.IsEqual(MusicPlayer.Codec,aifc)]">AIFF</value>
@@ -1650,15 +1669,21 @@
         <value condition="String.IsEqual(ListItem.AudioCodec,dsd_msbf) | [VideoPlayer.IsFullscreen + String.IsEqual(VideoPlayer.AudioCodec,dsd_msbf)] | [Window.IsActive(visualisation) + String.IsEqual(MusicPlayer.Codec,dfsd_msbf)]">DSD</value>
         <value condition="String.IsEqual(ListItem.AudioCodec,dsd_msbf_planar) | [VideoPlayer.IsFullscreen + String.IsEqual(VideoPlayer.AudioCodec,dsd_msbf_planar)] | [Window.IsActive(visualisation) + String.IsEqual(MusicPlayer.Codec,dsd_msbf_planar)]">DSD</value>
         <value condition="String.IsEqual(ListItem.AudioCodec,dts) | [VideoPlayer.IsFullscreen + String.IsEqual(VideoPlayer.AudioCodec,dts)] | [Window.IsActive(visualisation) + String.IsEqual(MusicPlayer.Codec,dts)]">DTS</value>
+        <value condition="String.IsEqual(ListItem.AudioCodec,dts_96_24) | [VideoPlayer.IsFullscreen + String.IsEqual(VideoPlayer.AudioCodec,dts_96_24)] | [Window.IsActive(visualisation) + String.IsEqual(MusicPlayer.Codec,dts_96_24)]">DTS 96/24</value>
+        <value condition="String.IsEqual(ListItem.AudioCodec,dts_es) | [VideoPlayer.IsFullscreen + String.IsEqual(VideoPlayer.AudioCodec,dts_es)] | [Window.IsActive(visualisation) + String.IsEqual(MusicPlayer.Codec,dts_es)]">DTS</value>
+        <value condition="String.IsEqual(ListItem.AudioCodec,dts_express) | [VideoPlayer.IsFullscreen + String.IsEqual(VideoPlayer.AudioCodec,dts_express)] | [Window.IsActive(visualisation) + String.IsEqual(MusicPlayer.Codec,dts_express)]">DTS</value>
         <value condition="[String.IsEqual(ListItem.AudioCodec,dtshd_hra) | [VideoPlayer.IsFullscreen + String.IsEqual(VideoPlayer.AudioCodec,dtshd_hra)] | [Window.IsActive(visualisation) + String.IsEqual(MusicPlayer.Codec,dtshd_hra)]] + $EXP[IsAudioCodecDTSX]">DTS:X</value>
         <value condition="[String.IsEqual(ListItem.AudioCodec,dtshd_hra) | [VideoPlayer.IsFullscreen + String.IsEqual(VideoPlayer.AudioCodec,dtshd_hra)] | [Window.IsActive(visualisation) + String.IsEqual(MusicPlayer.Codec,dtshd_hra)]] + $EXP[IsAudioCodecAuro3D]">Auro-3D</value>
         <value condition="String.IsEqual(ListItem.AudioCodec,dtshd_hra) | [VideoPlayer.IsFullscreen + String.IsEqual(VideoPlayer.AudioCodec,dtshd_hra)] | [Window.IsActive(visualisation) + String.IsEqual(MusicPlayer.Codec,dtshd_hra)]">DTS-HD HRA</value>
         <value condition="[String.IsEqual(ListItem.AudioCodec,dtshd_ma) | [VideoPlayer.IsFullscreen + String.IsEqual(VideoPlayer.AudioCodec,dtshd_ma)] | [Window.IsActive(visualisation) + String.IsEqual(MusicPlayer.Codec,dtshd_ma)]] + $EXP[IsAudioCodecDTSX]">DTS:X</value>
         <value condition="[String.IsEqual(ListItem.AudioCodec,dtshd_ma) | [VideoPlayer.IsFullscreen + String.IsEqual(VideoPlayer.AudioCodec,dtshd_ma)] | [Window.IsActive(visualisation) + String.IsEqual(MusicPlayer.Codec,dtshd_ma)]] + $EXP[IsAudioCodecAuro3D]">Auro-3D</value>
         <value condition="String.IsEqual(ListItem.AudioCodec,dtshd_ma) | [VideoPlayer.IsFullscreen + String.IsEqual(VideoPlayer.AudioCodec,dtshd_ma)] | [Window.IsActive(visualisation) + String.IsEqual(MusicPlayer.Codec,dtshd_ma)]">DTS-HD MA</value>
+        <value condition="String.IsEqual(ListItem.AudioCodec,dtshd_ma_x) | [VideoPlayer.IsFullscreen + String.IsEqual(VideoPlayer.AudioCodec,dtshd_ma_x)] | [Window.IsActive(visualisation) + String.IsEqual(MusicPlayer.Codec,dtshd_ma_x)]">DTS:X</value>
+        <value condition="String.IsEqual(ListItem.AudioCodec,dtshd_ma_x_imax) | [VideoPlayer.IsFullscreen + String.IsEqual(VideoPlayer.AudioCodec,dtshd_ma_x_imax)] | [Window.IsActive(visualisation) + String.IsEqual(MusicPlayer.Codec,dtshd_ma_x_imax)]">IMAX</value>
         <value condition="String.IsEqual(ListItem.AudioCodec,dtsma) | [VideoPlayer.IsFullscreen + String.IsEqual(VideoPlayer.AudioCodec,dtsma)] | [Window.IsActive(visualisation) + String.IsEqual(MusicPlayer.Codec,dtsma)]">DTS-HD MA</value>
         <value condition="[String.IsEqual(ListItem.AudioCodec,eac3) | [VideoPlayer.IsFullscreen + String.IsEqual(VideoPlayer.AudioCodec,eac3)] | [Window.IsActive(visualisation) + String.IsEqual(MusicPlayer.Codec,eac3)]] + $EXP[IsAudioCodecATMOS]">Atmos</value>
         <value condition="String.IsEqual(ListItem.AudioCodec,eac3) | [VideoPlayer.IsFullscreen + String.IsEqual(VideoPlayer.AudioCodec,eac3)] | [Window.IsActive(visualisation) + String.IsEqual(MusicPlayer.Codec,eac3)]">DD+</value>
+        <value condition="String.IsEqual(ListItem.AudioCodec,eac3_ddp_atmos) | [VideoPlayer.IsFullscreen + String.IsEqual(VideoPlayer.AudioCodec,eac3_ddp_atmos)] | [Window.IsActive(visualisation) + String.IsEqual(MusicPlayer.Codec,eac3_ddp_atmos)]">Atmos</value>
         <value condition="[String.IsEqual(ListItem.AudioCodec,flac) | [VideoPlayer.IsFullscreen + String.IsEqual(VideoPlayer.AudioCodec,flac)] | [Window.IsActive(visualisation) + String.IsEqual(MusicPlayer.Codec,flac)]] + $EXP[IsAudioCodecAuro3D]">Auro-3D</value>
         <value condition="String.IsEqual(ListItem.AudioCodec,flac) | [VideoPlayer.IsFullscreen + String.IsEqual(VideoPlayer.AudioCodec,flac)] | [Window.IsActive(visualisation) + String.IsEqual(MusicPlayer.Codec,flac)]">FLAC</value>
         <value condition="String.IsEqual(ListItem.AudioCodec,mp1) | [VideoPlayer.IsFullscreen + String.IsEqual(VideoPlayer.AudioCodec,mp1)] | [Window.IsActive(visualisation) + String.IsEqual(MusicPlayer.Codec,mp1)]">MP1</value>
@@ -1687,6 +1712,12 @@
 
     <variable name="Label_Audio_Codec_Furniture_Hub">
         <value condition="String.IsEqual(Container(9500).ListItem.AudioCodec,aac)">AAC</value>
+        <value condition="String.IsEqual(Container(9500).ListItem.AudioCodec,aac_latm)">AAC</value>
+        <value condition="String.IsEqual(Container(9500).ListItem.AudioCodec,aac_lc)">AAC</value>
+        <value condition="String.IsEqual(Container(9500).ListItem.AudioCodec,aac_ltp)">AAC</value>
+        <value condition="String.IsEqual(Container(9500).ListItem.AudioCodec,aac_ssr)">AAC</value>
+        <value condition="String.IsEqual(Container(9500).ListItem.AudioCodec,he_aac)">AAC</value>
+        <value condition="String.IsEqual(Container(9500).ListItem.AudioCodec,he_aac_v2)">AAC</value>
         <value condition="String.IsEqual(Container(9500).ListItem.AudioCodec,ac3)">DD</value>
         <value condition="String.IsEqual(Container(9500).ListItem.AudioCodec,aif)">AIFF</value>
         <value condition="String.IsEqual(Container(9500).ListItem.AudioCodec,aifc)">AIFF</value>
@@ -1702,6 +1733,9 @@
         <value condition="String.IsEqual(Container(9500).ListItem.AudioCodec,dsd_msbf)">DSD</value>
         <value condition="String.IsEqual(Container(9500).ListItem.AudioCodec,dsd_msbf_planar)">DSD</value>
         <value condition="String.IsEqual(Container(9500).ListItem.AudioCodec,dts)">DTS</value>
+        <value condition="String.IsEqual(Container(9500).ListItem.AudioCodec,dts_96_24)">DTS</value>
+        <value condition="String.IsEqual(Container(9500).ListItem.AudioCodec,dts_es)">DTS</value>
+        <value condition="String.IsEqual(Container(9500).ListItem.AudioCodec,dts_express)">DTS</value>
         <value condition="String.IsEqual(Container(9500).ListItem.AudioCodec,dtshd_hra) + $EXP[IsAudioCodecDTSXHub]">DTS:X</value>
         <value condition="String.IsEqual(Container(9500).ListItem.AudioCodec,dtshd_hra) + $EXP[IsAudioCodecAuro3DHub]">Auro-3D</value>
         <value condition="String.IsEqual(Container(9500).ListItem.AudioCodec,dtshd_hra)">DTS-HD HRA</value>
@@ -1713,6 +1747,7 @@
         <value condition="String.IsEqual(Container(9500).ListItem.AudioCodec,dtsma)">DTS-HD MA</value>
         <value condition="String.IsEqual(Container(9500).ListItem.AudioCodec,eac3) + $EXP[IsAudioCodecATMOSHub]">Atmos</value>
         <value condition="String.IsEqual(Container(9500).ListItem.AudioCodec,eac3)">DD+</value>
+        <value condition="String.IsEqual(Container(9500).ListItem.AudioCodec,eac3_ddp_atmos)">Atmos</value>
         <value condition="String.IsEqual(Container(9500).ListItem.AudioCodec,flac) + $EXP[IsAudioCodecAuro3DHub]">Auro-3D</value>
         <value condition="String.IsEqual(Container(9500).ListItem.AudioCodec,flac)">FLAC</value>
         <value condition="String.IsEqual(Container(9500).ListItem.AudioCodec,mp1)">MP1</value>
@@ -1728,6 +1763,7 @@
         <value condition="String.IsEqual(Container(9500).ListItem.AudioCodec,pcm_s24le)">PCM</value>
         <value condition="String.IsEqual(Container(9500).ListItem.AudioCodec,truehd) + $EXP[IsAudioCodecATMOSHub]">Atmos</value>
         <value condition="String.IsEqual(Container(9500).ListItem.AudioCodec,truehd)">TrueHD</value>
+        <value condition="String.IsEqual(Container(9500).ListItem.AudioCodec,truehd_atmos)">Atmos</value>
         <value condition="String.IsEqual(Container(9500).ListItem.AudioCodec,vorbis)">Vorbis</value>
         <value condition="String.IsEqual(Container(9500).ListItem.AudioCodec,wav)">WAV</value>
         <value condition="String.IsEqual(Container(9500).ListItem.AudioCodec,wavpack)">WAVP</value>
