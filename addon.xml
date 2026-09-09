@@ -35,8 +35,8 @@
 - Added skin color theme setting to skin settings (requires script.skin.info.service)
 - Implemented fallback to season/tvshow fanart for unwatched episodes
 - Simplified home menu bar configuration
+- New layout of horizontal menu bar with icons
 - Main menu items are now underlined by default even if icons are enabled
-- New layout of horizontal menu bar with icons only
 - Increased width of vertical home submenus
 - Extended fanart view to properly handle musicvideos
 - Close video OSD when up next popup is shown
