@@ -1574,13 +1574,13 @@
                 <width>80</width>
                 <height>80</height>
                 <centerleft>45.7%</centerleft>
-                <centertop>46%</centertop>
+                <centertop>45.5%</centertop>
                 <texture colordiffuse="Dark3">$INFO[ListItem.Icon]</texture>
             </control>
             <control type="label">
                 <align>center</align>
                 <width>180</width>
-                <centertop>148</centertop>
+                <centertop>150</centertop>
                 <centerleft>45.7%</centerleft>
                 <textcolor>Dark3</textcolor>
                 <font>HomeIcon</font>
@@ -1594,13 +1594,13 @@
 	                <width>80</width>
 	                <height>80</height>
                     <centerleft>45.7%</centerleft>
-                    <centertop>46%</centertop>
+                    <centertop>45.5%</centertop>
                     <texture colordiffuse="Dark1">$INFO[ListItem.Icon]</texture>
                 </control>
                 <control type="label">
                     <align>center</align>
                     <width>180</width>
-                    <centertop>148</centertop>
+                    <centertop>150</centertop>
                     <centerleft>45.7%</centerleft>
                     <textcolor>Dark1</textcolor>
                     <font>HomeIcon</font>
@@ -1608,7 +1608,7 @@
                 </control>
                 <control type="image">
                     <visible>Skin.HasSetting(homemenu.hide.underline)</visible>
-                    <bottom>33</bottom>
+                    <bottom>30</bottom>
                     <centerleft>45.7%</centerleft>
                     <include>arrowdimensions</include>
                     <texture colordiffuse="Dark1">common/arrow-small.png</texture>
@@ -1619,7 +1619,7 @@
                 <control type="group">
                     <visible>!Skin.HasSetting(homemenu.hide.underline)</visible>
                     <control type="image">
-                        <bottom>18</bottom>
+                        <bottom>16</bottom>
                         <centerleft>45.7%</centerleft>
                         <include>arrowdimensions</include>
                         <texture colordiffuse="Dark3">common/arrow-small.png</texture>
@@ -1628,14 +1628,14 @@
                         <animation effect="fade" end="100" start="0" delay="300" time="400" reversible="false">Focus</animation>
                     </control>
                     <control type="image">
-                        <bottom>43</bottom>
+                        <bottom>40</bottom>
                         <centerleft>45.7%</centerleft>
                         <width>90%</width>
                         <height>4</height>
                         <texture colordiffuse="$VAR[ColorHighlight]">common/box.png</texture>
                     </control>
                     <control type="image">
-                        <bottom>43</bottom>
+                        <bottom>40</bottom>
                         <centerleft>45.7%</centerleft>
                         <width>90%</width>
                         <height>4</height>
