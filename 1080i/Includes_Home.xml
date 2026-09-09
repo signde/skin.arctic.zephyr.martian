@@ -746,7 +746,7 @@
                 <control type="image">
                     <visible>Container(300).HasNext | Container(300).HasPrevious</visible>
                     <top>962</top>
-                    <left>52</left>
+                    <left>32</left>
                     <include>arrowdimensions</include>
                     <texture colordiffuse="Dark2" flipx="true">common/arrow-small-right.png</texture>
                 </control>
@@ -762,7 +762,7 @@
                     <visible>Container(300).HasNext | Container(300).HasPrevious</visible>
                     <visible>Skin.HasSetting(furniture.clock)</visible>
                     <top>962</top>
-                    <right>42</right>
+                    <right>32</right>
                     <include>arrowdimensions</include>
                     <texture colordiffuse="Dark2" flipx="false">common/arrow-small-right.png</texture>
                 </control>
@@ -1436,7 +1436,7 @@
                 <visible>Container(300).HasNext | Container(300).HasPrevious</visible>
                 <control type="image">
                     <top>962</top>
-                    <left>52</left>
+                    <left>32</left>
                     <include>arrowdimensions</include>
                     <texture colordiffuse="Dark2" flipx="true">common/arrow-small-right.png</texture>
                 </control>
@@ -1450,7 +1450,7 @@
                 <control type="image">
                     <visible>Skin.HasSetting(furniture.clock)</visible>
                     <top>962</top>
-                    <right>42</right>
+                    <right>32</right>
                     <include>arrowdimensions</include>
                     <texture colordiffuse="Dark2" flipx="false">common/arrow-small-right.png</texture>
                 </control>
@@ -1574,7 +1574,7 @@
                 <width>80</width>
                 <height>80</height>
                 <centerleft>45.7%</centerleft>
-                <centertop>47%</centertop>
+                <centertop>46%</centertop>
                 <texture colordiffuse="Dark3">$INFO[ListItem.Icon]</texture>
             </control>
             <control type="label">
@@ -1594,7 +1594,7 @@
 	                <width>80</width>
 	                <height>80</height>
                     <centerleft>45.7%</centerleft>
-                    <centertop>47%</centertop>
+                    <centertop>46%</centertop>
                     <texture colordiffuse="Dark1">$INFO[ListItem.Icon]</texture>
                 </control>
                 <control type="label">
